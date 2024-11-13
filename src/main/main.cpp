@@ -27,13 +27,13 @@ extern bool initCommonCmd();
 // extern bool initSimCmd();
 // extern bool initVrfCmd();
 // extern bool initAbcCmd();
-extern bool initModCmd();
+// extern bool initModCmd();
 // extern bool initBddCmd();
 /*extern bool initProveCmd();*/
 /*extern bool initItpCmd();*/
 // extern bool initCirCmd();
 // extern bool initYosysCmd();
-extern bool initAppCmd();
+// extern bool initAppCmd();
 // extern bool initSatCmd();
 extern bool initExpCmd();
 
@@ -69,7 +69,7 @@ int main(int argc, char** argv) {
 
     // cout << "[EXPERIMENTAL VERSION FOR CMAKE v0.1]\n";
     // clang-format off
-    if (!(initCommonCmd() && initExpCmd() && initModCmd() && initAppCmd()))
+    if (!(initCommonCmd() && initExpCmd()))
         return 1;
     // clang-format on
 

@@ -243,10 +243,10 @@ bool GVCmdMgr::regCmd(const string& cmd, unsigned nCmp1, unsigned nCmp2, GVCmdEx
 GVCmdExecStatus
 GVCmdMgr::execOneCmd() {
     // Ridirect Commands to Application Command Handler
-    if (getMode() == MOD_TYPE_APP) {
-        appCmdHandlerItf();
-        return GV_CMD_EXEC_DONE;
-    }
+    // if (getMode() == MOD_TYPE_APP) {
+    //     appCmdHandlerItf();
+    //     return GV_CMD_EXEC_DONE;
+    // }
 
     // Read User Command Input
     string str = "";

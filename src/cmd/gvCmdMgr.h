@@ -164,7 +164,7 @@ public:
 private:
     // Command Data members
     const string _defaultPrompt;  // Default Command Prompt
-    string _modPrompt;            // Current Command Prompt
+    string _modPrompt = "gv";     // Current Command Prompt
     string _prompt;               // Current Command Prompt
     ifstream _dofile;             // For Script Parsing
     GVCmdExecSet _cmdLib;
